@@ -1,4 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
+    
+    // ==============================================
+    // NOVO CÓDIGO: EFEITO GLITTER/CONFETTI (EXPLOSÃO INICIAL)
+    // ==============================================
+    
+    // 1. Inicializa o objeto confetti
+    const jsConfetti = new JSConfetti();
+
+    // 2. Define as cores lilás/lavanda/roxo para o confetti
+    const lilacColors = [
+        '#E0BBE4', // Lavanda Suave
+        '#957DAD', // Lilás Acinzentado
+        '#5C3A82', // Roxo Principal
+        '#F0E6FF', // Fundo claro (para dar um toque de glitter branco/claro)
+        '#6D28D9'  // Roxo Vibrante
+    ];
+
+    // 3. Dispara o Confetti no carregamento
+    jsConfetti.addConfetti({
+        confettiColors: lilacColors,
+        confettiNumber: 250, // Quantidade de "glitters"
+        confettiRadius: 5,   // Tamanho (deixa pequeno como glitter)
+        // Opcional: Adicionar emojis de estrela para parecer mais com glitter/brilho
+        emojis: ['✨', '💜', '🌟'],
+        emojiSize: 30 
+    });
+
+    // ==============================================
+    // (Restante do seu código JavaScript, como Mapa e RSVP)
+    // ==============================================
+    
+    // 1. Funcionalidade do Botão de Mapa
+    const botaoMapa = document.getElementById('abrirMapa');
+    // ... (restante do seu código)
+});
     // 1. Funcionalidade do Botão de Mapa
     const botaoMapa = document.getElementById('abrirMapa');
     // Você pode pesquisar o local no Google Maps e pegar o link de compartilhamento
