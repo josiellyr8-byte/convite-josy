@@ -1,0 +1,116 @@
+/* Paleta Lilás e Lavanda */
+:root {
+    --lilac-claro: #E6E6FA; /* Lavender Blus/Lavanda */
+    --lilac-medio: #DDA0DD; /* Plum/Lilás */
+    --lilac-escuro: #8A2BE2; /* Blue Violet/Roxo mais forte */
+    --fundo-texto: #FFFFFF; /* Branco */
+    --texto-principal: #4B0082; /* Indigo/Roxo Escuro para o texto */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--lilac-claro); /* Fundo em lavanda */
+    color: var(--texto-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.convite-container {
+    background-color: var(--fundo-texto);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    border: 3px solid var(--lilac-medio);
+}
+
+h1 {
+    color: var(--lilac-escuro);
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: var(--lilac-medio);
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.data-local, .confirmacao-presenca {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--lilac-claro);
+}
+
+.data-local p {
+    margin: 8px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Estilo dos Botões */
+.botao-confirmar {
+    background-color: var(--lilac-escuro); /* Roxo forte para destaque */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-confirmar:hover {
+    background-color: var(--lilac-medio); /* Lilás no hover */
+}
+
+.botao-mapa {
+    background-color: var(--lilac-medio);
+    color: var(--texto-principal);
+    padding: 8px 15px;
+    border: 2px solid var(--lilac-medio);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.botao-mapa:hover {
+    background-color: var(--lilac-claro);
+    border-color: var(--lilac-escuro);
+}
+
+/* Estilo do Formulário */
+#formRSVP label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#formRSVP input[type="text"], 
+#formRSVP input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--lilac-medio);
+    border-radius: 5px;
+}
+/* Estilo para a nova informação de Rodízio */
+.aviso-rodizio {
+    font-weight: 600 !important; /* Deixa o texto em negrito */
+    color: var(--roxo-principal) !important; /* Cor de destaque */
+    margin-top: 15px !important; 
+    padding-top: 10px;
+    border-top: 1px dashed var(--lavanda-medio); /* Linha tracejada suave */
+}
